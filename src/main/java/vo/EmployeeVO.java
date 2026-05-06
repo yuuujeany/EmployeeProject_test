@@ -2,14 +2,14 @@ package vo;
 
 import java.util.Objects;
 
-public class EmployeeVo {
-    private String id;
+public class EmployeeVO {
+    private String id ;
     private String name;
     private String position;
     private int salary;
     private String hireDate;
 
-    public EmployeeVo(String id, String name, String position, int salary, String hireDate) {
+    public EmployeeVO(String id, String name, String position, int salary, String hireDate) {
         this.id = id;
         this.name = name;
         this.position = position;
@@ -65,7 +65,7 @@ public class EmployeeVo {
     @Override
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
-        EmployeeVo that = (EmployeeVo) o;
+        EmployeeVO that = (EmployeeVO) o;
         return Objects.equals(id, that.id);
     }
 

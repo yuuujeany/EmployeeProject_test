@@ -1,7 +1,7 @@
 package controller;
 
 import service.EmployeeService;
-import vo.EmployeeVo;
+import vo.EmployeeVO;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -10,9 +10,9 @@ public class PrintAllController implements Controller {
     @Override
     public void execute(Scanner sc) {
         System.out.println("전체 사원 정보를 출력합니다.......");
-        ArrayList<EmployeeVo> list = EmployeeService.getInstance().getList();
+        ArrayList<EmployeeVO> list = EmployeeService.getInstance().getList();
 
-        for(EmployeeVo vo : list){
+        for(EmployeeVO vo : list){
             System.out.println(vo);
         }
 
