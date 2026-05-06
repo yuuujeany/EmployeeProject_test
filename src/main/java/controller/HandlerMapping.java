@@ -5,15 +5,17 @@ public class HandlerMapping {
 
     private HandlerMapping() {}
 
-    public static HandlerMapping getInstance(){
-        if(instance == null)
+    public static HandlerMapping getInstance() {
+        if (instance == null)
             instance = new HandlerMapping();
-        return  instance;
+        return instance;
     }
 
     public Controller createController(int no){
         Controller controller = null;
         switch (no){
+            case 5:
+                controller = new PrintAllController();
 
         }
         return controller;

@@ -59,13 +59,7 @@ public class EmployeeVo {
 
     @Override
     public String toString() {
-        return "EmployeeVo{" +
-                "id='" + id + '\'' +
-                ", name='" + name + '\'' +
-                ", position='" + position + '\'' +
-                ", salary=" + salary +
-                ", hireDate='" + hireDate + '\'' +
-                '}';
+        return id + "," + name + "," + position + "," + salary + "," + hireDate;
     }
 
     @Override
