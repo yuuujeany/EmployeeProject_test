@@ -8,18 +8,18 @@
 
      controller
          │
-         └ Controller
+         ├ Controller
          └ HanderMapping
          │ ...
          │   
         main
-         └ EmployeeMain
+         ├ EmployeeMain
          │
        service
-         └ EmployeeService
+         ├ EmployeeService
          │
       exception
-         └ EmployeeException
+         ├ EmployeeException
          │
          vo
          └ EmployeeVo
