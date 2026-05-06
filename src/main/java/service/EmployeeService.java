@@ -67,4 +67,9 @@ public class EmployeeService {
     public boolean appendEmployee(EmployeeVO employeeVO) {
         return list.add(employeeVO);
     }
+
+    public void deleteEmployee(String id) throws EmployeeException {
+        if(!list.remove(new EmployeeVO(id,null,null,0,null)))
+            throw new EmployeeException("삭제할 사원 정보가 없습니다.");
+    }
 }
